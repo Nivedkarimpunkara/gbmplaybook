@@ -30,7 +30,7 @@
       - name: Launch ec2 instances
         tags: create_ec2
         ec2:
-          region: us-east-1
+          region: us-east-2
           key_name: SaravAK-PrivateKey
           group: app_sec_group
           instance_type: t2.micro
