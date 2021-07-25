@@ -1,6 +1,9 @@
 ---
 - name: Create Ec2 instances
   hosts: localhost
+  # import the secret file
+  vars_files:
+    - secrets.yml
   gather_facts: false
   tasks:
 
@@ -28,7 +31,7 @@
         tags: create_ec2
         ec2:
           region: us-east-1
-          key_name: SaravAK-PrivateKey 
+          key_name: SaravAK-PrivateKey
           group: app_sec_group
           instance_type: t2.medium
           image: ami-2051294a
