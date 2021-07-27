@@ -1,8 +1,6 @@
 ---
 - name: This is a ping check
   hosts: web
-  become: yes
-  become_user: root
   tasks:
           - name: Ping check
             ping:
