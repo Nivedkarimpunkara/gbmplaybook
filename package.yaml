@@ -8,8 +8,6 @@
   vars: 
     pkgs:
       - httpd
-      - php
-      - mariadb
   tasks:
     - name: Ping check
       ping:
