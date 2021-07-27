@@ -13,3 +13,5 @@
         name: "{{ item }}"
         state: present
       loop: "{{ pkgs }}"
+      become: yes
+      become_user: root
