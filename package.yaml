@@ -7,6 +7,9 @@
       - php
       - mariadb
   tasks:
+    - name: Ping check
+      ping:
+      
     - name: install the packages
       yum:
         name: "{{ item }}"
