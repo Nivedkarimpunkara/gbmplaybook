@@ -3,6 +3,7 @@
   hosts: web
   vars: 
     pkgs:
+      - httpd
       - php
       - mariadb
   tasks:
