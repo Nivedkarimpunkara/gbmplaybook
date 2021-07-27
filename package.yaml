@@ -1,7 +1,6 @@
 ---     
 - name: Playbook for packages.yml
   hosts: web
- 
   vars: 
     pkgs:
       - httpd
@@ -13,5 +12,3 @@
         name: "{{ item }}"
         state: present
       loop: "{{ pkgs }}"
-      become: yes
-      become_user: root
