@@ -1,6 +1,6 @@
 ---
 - name: This is a ping check
-  hosts: web
+  hosts: test
   tasks:
           - name: Ping check
             ping:
