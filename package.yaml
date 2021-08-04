@@ -1,6 +1,6 @@
 ---     
 - name: Playbook for packages.yml
-  hosts: test
+  hosts: all
   gather_facts: false
   become: true
   become_user: root
