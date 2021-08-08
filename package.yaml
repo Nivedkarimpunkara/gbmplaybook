@@ -5,7 +5,7 @@
   become: true
   become_user: root
   become_method: sudo
-  become_ask_pass: false
+  #become_ask_pass: false
   remote_user: nived
   tasks:
     - name: Ping check
