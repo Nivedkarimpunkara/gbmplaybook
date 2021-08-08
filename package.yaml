@@ -2,10 +2,10 @@
 - name: Playbook for packages.yml
   hosts: all
   gather_facts: false
-  become: false
-  become_user: root
-  become_method: sudo
-  remote_user: devops
+ # become: false
+ # become_user: root
+ # become_method: sudo
+ # remote_user: devops
   vars: 
     pkgs:
       - httpd
