@@ -12,9 +12,9 @@
       ping:
       
     - name: install the packages
-      package:
-        name: "httpd"
-        state: present
+      yum:
+        name: httpd
+        state: latest
       register: this
     - debug:
         var: this
