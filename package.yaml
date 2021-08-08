@@ -2,7 +2,7 @@
 - name: Playbook for packages.yml
   hosts: all
   gather_facts: false
-  become: true
+  ansible_become: false
   become_user: root
   become_method: sudo
   remote_user: devops
