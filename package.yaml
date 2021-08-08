@@ -13,7 +13,7 @@
       
     - name: install the packages
       package:
-        name: httpd
+        name: "httpd"
         state: present
       register: this
     - debug:
