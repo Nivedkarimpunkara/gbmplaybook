@@ -12,7 +12,7 @@
       ping:
       
     - name: install the packages
-      yum:
+      dnf:
         name: httpd
         state: latest
       register: this
