@@ -7,15 +7,12 @@
   become_method: sudo
   become_ask_pass: false
   remote_user: nived
-  vars: 
-    pkgs:
-      - httpd
   tasks:
     - name: Ping check
       ping:
       
     - name: install the packages
       yum:
-        name: "{{ item }}"
+        name: httpd
         state: present
-      loop: "{{ pkgs }}"
+    
