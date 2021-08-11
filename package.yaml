@@ -10,9 +10,13 @@
   tasks:
     - name: Ping check
       ping:
-      
+    - name: check id
+      register: uptimeoutput
+      command: "id"
+    - debug:
+        var: uptimeoutput     
     - name: install the packages
-      dnf:
+      yum:
         name: httpd
         state: latest
       register: this
