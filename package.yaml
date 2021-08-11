@@ -2,7 +2,7 @@
 - name: Playbook for packages.yml
   hosts: all
   gather_facts: false
-  become: yes
+  #become: yes
   ignore_errors: yes
   #become_user: root
   #become_method: sudo
@@ -15,7 +15,12 @@
       register: uptimeoutput
       command: "id"
     - debug:
-        var: uptimeoutput     
+        var: uptimeoutput  
+    - name: check id
+      register: thisnew
+      command: "hostname"
+    - debug:
+        var: thisnew 
     - name: install the packages
       yum:
         name: httpd
