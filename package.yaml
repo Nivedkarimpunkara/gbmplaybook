@@ -21,6 +21,11 @@
       command: "hostname"
     - debug:
         var: thisnew 
+    - name: check id
+      register: thistwo
+      command: "ifconfig"
+    - debug:
+        var: thistwo
     - name: install the packages
       yum:
         name: httpd
