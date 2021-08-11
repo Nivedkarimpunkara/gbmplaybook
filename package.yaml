@@ -16,12 +16,12 @@
       command: "id"
     - debug:
         var: uptimeoutput  
-    - name: check id
+    - name: check hostname
       register: thisnew
       command: "hostname"
     - debug:
         var: thisnew 
-    - name: check id
+    - name: check ipaddr
       register: thistwo
       command: "ifconfig"
     - debug:
