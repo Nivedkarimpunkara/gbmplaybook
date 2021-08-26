@@ -1,6 +1,7 @@
 ---
 - name: This is a ping check
   hosts: all
+  remote_user: nived
   tasks:
           - name: Ping check
             ping:
