@@ -6,8 +6,8 @@
   tasks:
         - name: Deploy new EC2 Instance
           ec2:
-                  aws_access_key: "{{ AWS_ACCESS_KEY_ID }}"
-                  aws_secret_key: "{{ AWS_SECRET_ACCESS_KEY }}"
+                #  aws_access_key: "{{ AWS_ACCESS_KEY_ID }}"
+                #  aws_secret_key: "{{ AWS_SECRET_ACCESS_KEY }}"
                   ec2_region: us-east-2
                   instance_type: t2.micro
                   image: ami-000e7ce4dd68e7a11
